@@ -9,7 +9,7 @@
 }
 
 body {
-    background-color: rgb(224, 224, 224);
+    background-color: #efefef;
     font-family: 'Quicksand', sans-serif;
     color: rgb(80, 80, 80);
 }
@@ -21,13 +21,13 @@ header {
     color: white;
 }
 
-header .header-flex{
+header .header-flex {
     display: flex;
     justify-content: space-between;
 }
 
 .container-grid {
-    width: 75%;
+    width: 65%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -37,7 +37,7 @@ header .header-flex{
 header h1 {
     color: white;
     font-weight: 200;
-    border: 2px solid white;
+    font-size: 48px;
 }
 
 header h1 #logoux {
@@ -45,22 +45,29 @@ header h1 #logoux {
     font-style: italic;
 }
 
-header nav{
+header nav {
     display: flex;
     justify-content: flex-end;
+    width: 50%;
 }
 
 header nav a {
     color: white;
     text-decoration: none;
     margin-left: 40px;
-    border: 2px solid white;
+    padding-top: 30px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    font-size: 24px;
 }
 
 main {
+    background-color: salmon;
     display: flex;
     justify-content: space-between;
     margin-top: 40px !important;
+    margin-bottom: 40px !important;
 }
 
 main section {
@@ -82,10 +89,63 @@ section h2, p {
 aside {
     margin-left: 40px;
     width: 25%;
+    height: 100%;
 }
 
 aside article {
     background-color: white;
-    padding-bottom: 20px;
-    margin-bottom: 20px;
+}
+
+aside article h3 {
+    display: flex;
+    justify-content: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-transform: uppercase;
+    border-bottom: gray solid 1px;
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+}
+
+aside article ul {
+    display: flex;
+    flex-flow: column;
+    margin: 15px 35px 15px 45px;
+}
+
+aside article p{
+    padding-bottom: 20px ;
+    text-align: center;
+}
+
+.aside-align{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+li {
+    font-size: 20px;
+}
+
+ #email {
+    width: 75%;
+    height: 30px;
+    border: 2px solid #c0c0c0;
+    align-self: center;
+} 
+
+footer {
+    background-color: rgb(128, 128, 128);
+    padding: 30px;
+}
+
+footer p {
+    color: white;
+    font-weight: 400;
+    font-size: 14;
 }
