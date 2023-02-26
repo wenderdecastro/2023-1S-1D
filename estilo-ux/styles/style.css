@@ -9,6 +9,8 @@
 }
 
 body {
+    /* display: flex;
+    flex-direction: column; */
     background-color: #efefef;
     font-family: 'Quicksand', sans-serif;
     color: rgb(80, 80, 80);
@@ -21,26 +23,33 @@ header {
     color: white;
 }
 
-header .header-flex {
-    display: flex;
-    justify-content: space-between;
-}
-
-.container-grid {
-    width: 65%;
+.header-flex {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 1000px;
     margin: 0 auto;
+}
+
+.container-grid {
+    
+    /* width: 70%;
+    max-height: 80%;
+    display: flex;
+    justify-content: space-between; */
+    margin: 0 auto;
+    max-width: 1000px;
+    
 }
 
 header h1 {
     color: white;
     font-weight: 200;
-    font-size: 48px;
+
 }
 
 header h1 #logoux {
+    font-size: 36px;
     font-weight: 600;
     font-style: italic;
 }
@@ -54,20 +63,20 @@ header nav {
 header nav a {
     color: white;
     text-decoration: none;
-    margin-left: 40px;
     padding-top: 30px;
     padding-right: 20px;
     padding-bottom: 30px;
     padding-left: 20px;
-    font-size: 24px;
+    font-size: 16px;
 }
 
+/* Main container */
+
 main {
-    background-color: salmon;
     display: flex;
     justify-content: space-between;
-    margin-top: 40px !important;
-    margin-bottom: 40px !important;
+    margin: 0;
+    margin-top: 60px !important;
 }
 
 main section {
@@ -80,72 +89,87 @@ main section img {
     width: 100%;
 }
 
-section h2, p {
+section h2,
+p {
     margin: 20px;
-    font-size: 20px;
     font-weight: 300;
 }
 
 aside {
-    margin-left: 40px;
-    width: 25%;
-    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 23%;
+
 }
 
 aside article {
     background-color: white;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 aside article h3 {
-    display: flex;
-    justify-content: center;
     padding-top: 5px;
     padding-bottom: 5px;
     margin-bottom: 15px;
-    padding-left: 30px;
-    padding-right: 30px;
+    font-size: 14px;
     text-transform: uppercase;
     border-bottom: gray solid 1px;
     width: 100%;
-    font-size: 20px;
     text-align: center;
 }
 
 aside article ul {
-    display: flex;
-    flex-flow: column;
-    margin: 15px 35px 15px 45px;
+    margin: 0px 30px 0 30px;
+    font-size: 12px;
+    list-style-type: disc;
+    font-weight: 200;
 }
 
-aside article p{
-    padding-bottom: 20px ;
+li{
+    display: list-item;
+    font-size: 12px
+}
+
+aside article p {
     text-align: center;
 }
 
-.aside-align{
+aside article form{
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    margin: 0 auto;
 }
 
-li {
-    font-size: 20px;
+aside article form button{
+    background-color: black;
+    width: 15%;
+    height: 30px;
 }
 
- #email {
+aside article form input {
+    border: gray 1px solid;
     width: 75%;
     height: 30px;
-    border: 2px solid #c0c0c0;
-    align-self: center;
-} 
+}
+
+#lastarticle{
+    margin-bottom: 0 !important;
+}
+
+/* FOOTER */
 
 footer {
     background-color: rgb(128, 128, 128);
-    padding: 30px;
-}
-
-footer p {
+    position: absolute;
+    bottom:0;
+    left: 0; 
+    width: 100%;
     color: white;
+} */
+
+ footer p {
     font-weight: 400;
     font-size: 14;
 }
