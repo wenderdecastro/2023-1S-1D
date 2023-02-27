@@ -32,20 +32,15 @@ header {
 }
 
 .container-grid {
-    
-    /* width: 70%;
-    max-height: 80%;
-    display: flex;
-    justify-content: space-between; */
+
+    /* width: 70%; */
     margin: 0 auto;
     max-width: 1000px;
-    
 }
 
 header h1 {
     color: white;
     font-weight: 200;
-
 }
 
 header h1 #logoux {
@@ -63,10 +58,7 @@ header nav {
 header nav a {
     color: white;
     text-decoration: none;
-    padding-top: 30px;
-    padding-right: 20px;
-    padding-bottom: 30px;
-    padding-left: 20px;
+    padding: 30px 20px 30px 20px;
     font-size: 16px;
 }
 
@@ -75,9 +67,7 @@ header nav a {
 main {
     display: flex;
     justify-content: space-between;
-    margin: 0;
-    margin-top: 60px !important;
-    margin-bottom: 60px !important;
+    margin: 60px auto !important;
 }
 
 main section {
@@ -91,17 +81,18 @@ main section img {
 }
 
 section h2,
-p {
+section p, article p {
     margin: 20px;
     font-weight: 300;
 }
+
+/* ASIDE */
 
 aside {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 23%;
-
 }
 
 aside article {
@@ -111,25 +102,25 @@ aside article {
 }
 
 aside article h3 {
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding: 5px 0;
     margin-bottom: 15px;
+    text-align: center;
+
     font-size: 14px;
     text-transform: uppercase;
     border-bottom: rgb(192, 192, 192) solid 1px;
     width: 100%;
-    text-align: center;
-    color:rgb(128, 128, 128);
+    color: rgb(128, 128, 128);
 }
 
 aside article ul {
     margin: 0px 25px 0 30px;
     font-size: 12px;
     font-weight: 200;
-    color:rgb(128, 128, 128);
+    color: rgb(128, 128, 128);
 }
 
-li{
+li {
     display: list-item;
     font-size: 14px
 }
@@ -138,24 +129,26 @@ aside article p {
     text-align: center;
 }
 
-aside article form{
+/* form */
+
+aside article form {
     display: flex;
     justify-content: space-evenly;
     margin: 0 auto;
 }
 
-aside article form button{
+aside article form button {
     display: flex;
     justify-content: center;
     align-items: center;
+
     background-color: rgb(128, 128, 128);
     border: none;
     width: 15%;
     height: 30px;
-    
 }
 
-i{
+i {
     scale: 0.8;
     color: white;
 }
@@ -166,7 +159,7 @@ aside article form input {
     height: 30px;
 }
 
-#lastarticle{
+#lastarticle {
     margin-bottom: 0 !important;
 }
 
@@ -174,14 +167,13 @@ aside article form input {
 
 footer {
     background-color: rgb(128, 128, 128);
-        /* position: absolute;
-        bottom:0;
-        left: 0;  */
     width: 100%;
     color: white;
-} */
+    padding: 20px 0px;
+}
 
- footer p {
+*/ footer p {
+
     font-weight: 400;
     font-size: 14;
 }
